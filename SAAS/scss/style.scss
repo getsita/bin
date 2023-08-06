@@ -1,0 +1,16 @@
+@import 'header';
+
+.a
+{
+    width: 200px; height: 200px/239px*100%; border:1px solid black ;
+}
+.aaa{
+    @extend .a;
+    background: green;
+
+}
+.bbb{
+    @extend .a;
+    background: yellowgreen;
+
+}

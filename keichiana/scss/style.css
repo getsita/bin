@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+@import 'var';
+@import 'mixin';
+
+*
+{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body
+{
+font-family: $f1;
+}
+h1,h2,h3,h4,h5,h6
+{font-family: $f2;}
+
+.con
+{
+    max-width:1200px;
+    margin: auto;
+}
+
+.top
+{
+    background: $black;
+    color:$w;
+    line-height:40px;
+    @include res(0px, 992px)
+{
+    display:none;
+}
+}
+
+
+

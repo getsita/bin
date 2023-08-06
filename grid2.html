@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            background: red;
+            display: grid;
+            grid-template-areas: 'a a a a a a' '. b b b c .'
+                '. d d e e .' 'f f f f f f ';
+        }
+
+        .box {
+            background: brown;
+            color: white;
+            border: 2px solid green;
+            padding: 50px;
+        }
+
+        .a {
+            grid-area: a;
+        }
+
+        .b {
+            grid-area: b;
+        }
+
+        .c {
+            grid-area: c;
+        }
+
+        .d {
+            grid-area: d;
+        }
+
+        .e {
+            grid-area: e;
+        }
+
+        .f {
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box a">Header</div>
+        <div class="box B">Menu</div>
+        <div class="box c">Left</div>
+        <div class="box d">Mid</div>
+        <div class="box e">Right</div>
+        <div class="box f">Footer</div>
+
+    </div>
+</body>
+
+</html>

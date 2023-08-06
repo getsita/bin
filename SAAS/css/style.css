@@ -1,0 +1,104 @@
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  background: #692a2a;
+}
+
+/*nesting*/
+nav {
+  float: left;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #692a2a;
+}
+nav ul li a:hover {
+  color: blue;
+}
+
+.left {
+  width: 300px;
+  height: 300px;
+  background: #ea56ea;
+}
+
+.right {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+
+.mm {
+  width: 200px;
+  height: true;
+  border-radius: 50%;
+}
+
+.bb {
+  width: 200px;
+  height: false;
+  background: red;
+}
+
+.box-30px {
+  width: 30px;
+  height: 30px;
+  padding: 30px;
+}
+
+.box-10px {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+}
+
+.box-20px {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+}
+
+.box-50px {
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+}
+
+.box-90px {
+  width: 90px;
+  height: 90px;
+  padding: 90px;
+}
+
+.a, .bbb, .aaa {
+  width: 200px;
+  height: 83.6820083682%;
+  border: 1px solid black;
+}
+
+.aaa {
+  background: green;
+}
+
+.bbb {
+  background: yellowgreen;
+}/*# sourceMappingURL=style.css.map */

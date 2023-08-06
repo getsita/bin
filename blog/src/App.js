@@ -1,0 +1,18 @@
+import React from "react";
+import"../node_modules/bootstrap/dist/css/bootstrap.css"
+import "./css/style.css"
+
+import Header from "./Comp/Header";
+import Footer from "./Comp/Footer";
+
+function App(){
+  return(
+    <>
+    <Header/>
+    <Footer/>
+    
+
+    </>
+  )
+}
+export default App

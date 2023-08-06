@@ -1,0 +1,71 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+$brand:#692a2a;
+$w:400px;
+.box{
+    width:$w; height:$w; background:$brand;
+}
+
+/*nesting*/
+nav{
+    float: left;
+    ul{
+        list-style: none;
+        
+            li{
+                display: inline;
+                a
+                {
+                    text-decoration: none;
+                    color:#692a2a;
+                    &:hover
+                    {
+                        color: blue;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+@mixin abc ($ww,$h,$b: yellow)
+{
+    width: $ww; height: $h; background:$b;
+}
+.left{
+    @include abc(300px, 300px, #ea56ea)
+}
+.right{
+    @include abc(200px, 200px, )
+}
+@mixin thumb($size, $c)
+{
+    width: $size; height: $c;
+    @if($c)
+    {
+        border-radius: 50%;
+    }
+    @else
+    {
+        background: red;
+    }
+}
+.mm{
+    @include thumb(200px, true)
+}
+.bb{
+    @include thumb(200px, false)
+}
+
+$sizes:30px, 10px, 20px, 50px, 90px; 
+
+@each $z in $sizes{
+    .box-#{$z}
+    {
+        width: $z; height: $z; padding: $z;
+    }
+}

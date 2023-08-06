@@ -1,0 +1,22 @@
+.navbar .navbar-brand img {
+  width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #055999;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  background: #055999;
+  color: #fff;
+}
+
+.box {
+  background: #efefef;
+  border: 1px solid #efefef;
+}
+.box i {
+  font-size: 80px;
+}/*# sourceMappingURL=style.css.map */

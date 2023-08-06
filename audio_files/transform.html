@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 200px; height: 200px; background: skyblue; transition-duration: 3s;
+        transition-property: all; transition-delay: 2s; transition-timing-function: linear;
+    /* transiyion:all 3s linear 2s;*/
+}
+.box:hover{width:400px ;}
+.box1{width: 200px;height: 200px; background: yellow; transition: 0.9s;
+transform-origin: right top; transition-delay: 3s;}
+.box1:hover{transform: rotate(-180deg);}
+
+.box2{width: 200px ; height: 200px; background: pink; transition: 0.3s;}
+.box2:hover{transform: skew(50deg, 30deg);}
+
+.box3{width: 200px ; height: 200px; background: rgb(147, 36, 54); transition: 0.3s;}
+.box3:hover{transform: translate(40px, 30px);}
+
+.box4{width: 200px; height: 200px; background: grey; transition: 0.3s;
+transform-origin: left top;}
+.box4:hover{transform:scale(2, 4);}
+
+.mid{width: 400px; height: 400px; background: magenta; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="box1">B</div>
+    <div class="box2">C</div>
+    <div class="box3">D</div>
+    <div class="box4">E</div> 
+    <div class="mid">F</div>
+
+
+
+
+    
+
+    
+</body>
+</html>

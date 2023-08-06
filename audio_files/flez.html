@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            background: purple;
+            display: flex;
+            flex-direction: row;
+            /*row column row reverse column-reverse*/
+            flex-wrap: wrap;
+            /*nowrap*/
+            justify-content: space-around;
+            /*start end center space-between; space-evenly space-around*/
+            height: 400px;
+            align-items: stretch;
+            /*start and center*/
+        }
+
+        .box {
+            background: green;
+            padding: 20px;
+            border: 2px solid black;
+            width: 100px;
+        }
+
+        .a {
+            flex-basis: 400px;
+        }
+
+        .b {
+            flex-grow: 1;
+        }
+
+        .d {
+            flex-grow: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="con">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+    </div>
+
+</body>
+
+</html>

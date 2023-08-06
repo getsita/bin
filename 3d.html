@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .g{width: 400px; 
+            height: 400px; 
+            background:red;
+            margin: 20px;}
+        .box{
+            width: 400px; 
+            height: 400px; 
+            background: green; 
+            transition: 0.9s;
+            transform: perspective(100px) rotateY(30deg);}
+
+        .g:hover .box{
+            transform: perspective(1000px) rotatey(180deg); }
+       
+
+
+
+        .box1{
+            width: 400px; 
+            height: 400px;
+            background: purple; 
+            transition: 0.9s;
+            transform: perspective(100px) translateZ(0px);}
+        .g:hover .box1{
+            transform: perspective(1000px) rotateY(30deg) translateZ(200px);}
+
+        
+
+        .box2{
+            width: 400px;
+            height: 400px; 
+            background: greenyellow; 
+            transition: 0.9s;
+            transform: perspective(1000px) rotateX(30deg) scaleZ(1)};
+        .g:hover .box2{
+            transform: perspective(100px) rotateX(30deg) scaleZ(3);}
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="g">
+        <div class="box"></div>
+    </div>
+    <div class="g">
+        <div class="box1"></div>
+    </div>
+    <div class="g">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
